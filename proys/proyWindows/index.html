@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de Windows 95</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="desktop">
+        <div class="window" id="myWindow">
+            <div class="window-titlebar">
+                <span class="window-title">Mi ventana</span>
+                <div class="window-buttons">
+                    <button class="window-button minimize">_</button>
+                    <button class="window-button maximize">▢</button>
+                    <button class="window-button close">X</button>
+                </div>
+            </div>
+            <div class="window-content">
+                <p>Este es el contenido de la ventana.</p>
+            </div>
+        </div>
+        <div class="taskbar">
+            <button class="start-button">Inicio</button>
+            <div class="taskbar-clock">12:00 PM</div>
+        </div>
+    </div>
+
+    <!-- Incluir el archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
