@@ -1,0 +1,110 @@
+/*Generales*/
+
+:root {
+    --colorLetra01: #050C9C;
+    --colorLetra04: #A7E6FF;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI";
+    font-weight: 600;
+    display: flex;
+    width: 100%;
+    background-color:  #dce3d4;
+}
+
+h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: var(--colorLetra01);
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 750;
+    color: var(--colorLetra01);
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: var(--colorLetra01);
+}
+
+#pagina {
+    flex-basis: 100%;
+    max-width: 120rem; /*1920px*/
+}
+
+/*Cuadros*/
+.header {
+    display: flex;
+    width: 100%;
+    height: 5rem;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2rem;
+    margin: auto;
+    padding: 1rem;
+    flex-basis: 80%;
+    max-width: 30rem;
+    height: 1.375rem;
+    background-color: var(--colorLetra04);
+    z-index: 2;
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: calc(100vh - 8rem);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.textPresentacion {
+    padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .textPresentacion { 
+        margin: auto;
+        padding: 1rem;
+    }
+}
+
+.proys {
+    display: flex;
+    flex-wrap: wrap ;
+    width: 70rem;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+.proy {
+    background-color: var(--colorLetra04);
+    padding: 1rem;
+    width: 20rem;
+    border-radius: 1rem;
+}
+
+.proy img {
+    width: 20rem;
+    height: 13rem;
+}
+
+.imgPresentacion img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    max-width: 100%;
+    height: auto;
+}
+
